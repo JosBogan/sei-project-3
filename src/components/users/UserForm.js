@@ -4,6 +4,7 @@ import { skills, professions, levels } from '../../../config/environment'
 import ImageUpload from '../common/ImageUpload'
 import colorStyles from '../../lib/colourStyles'
 
+
 const UserForm = ({ data, handleChange, handleSubmit, handleMultiChange, handleChangeImage, handleChangeSkill, handleChangeLevel }) => {
   const professionOptions =
     professions.map(item => {

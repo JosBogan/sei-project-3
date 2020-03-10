@@ -18,16 +18,15 @@ class Login extends React.Component {
   }
   handleSubmit = async e => {
     e.preventDefault()
-    
     try {
       const res = await axios.post('/api/login', this.state.data)
       console.log(res.data)
       Auth.setToken(res.data.token), console.log('token =', res.data.token)
       console.log(res.data.firstLogin)
       if (res.data.firstLogin) {
-        this.props.history.push('/getstarted')
+        console.log('first')
       } else {
-        this.props.history.push('/discovery')
+        console.log('second')
       }
     } catch (err) {
       this.setState({ error: 'Invalid Credentials' })

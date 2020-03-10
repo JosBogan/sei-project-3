@@ -13,6 +13,7 @@ class ImageUpload extends React.Component {
     data.append('file', files[0])
     data.append('upload_preset', cloudinaryUserKey) // this is your user key from your cloudinary account
     const res = await axios.post('https://api.cloudinary.com/v1_1/dgy8usa3w/image/upload', data)
+    console.log(res)
     this.setState({ image: res.data.url, original: files[0].name }, () => {
       this.props.handleChangeImage({ target: { name: this.props.fieldName, value: res.data.url } }) 
     })

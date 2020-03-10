@@ -19,6 +19,7 @@ class Register extends React.Component {
     console.log('const data =', data)
     console.log('state =', this.state.data)
   }
+
   handleSubmit = async e => {
     e.preventDefault()
     const userData = { ...this.state.data, 
@@ -35,6 +36,7 @@ class Register extends React.Component {
       this.setState({ errors: err.response.data.errors })
     }
   }
+  
   render() {
     console.log('errors=', this.state.errors)
     return (
