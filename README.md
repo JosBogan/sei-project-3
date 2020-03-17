@@ -130,7 +130,7 @@ Whilst on the front end I worked on:
 
 ## Featured Code
 
-This piece of code is part of the user controller that I wrote and is what controls the skill endorsement. Though not the most complex piece of code I'm happy with how cleanly it came out as it allows dual functinality for one endpoint. This is a secure route through the back end and so is only acessibile if the user is logged in, hence the username that is attached to the `req.params`. The like/endorse controller below is a toggle to with the exact same endpoint/request it checks if the user has already liked a skill and then either adds or removes the like depending whether the use has already liked it.
+This piece of code is part of the user controller that I wrote and is what controls the skill endorsement. Though not the most complex piece of code I'm happy with how cleanly it came out as it allows dual functinality for one endpoint. This is a secure route through the back end and so is only acessibile if the user is logged in, hence the username that is attached to the `req.currentUser`. The like/endorse controller below is a toggle to with the exact same endpoint/request it checks if the user has already liked a skill and then either adds or removes the like depending whether the use has already liked it.
 
 ```javascript
 function like(req, res) {
