@@ -43,8 +43,6 @@ Beehive was my third project at General Assembly. This project was done in a tea
 * Ensure the terminal respondes with 'app is listening on port 4000'
 * Open your chosen browser and navigate to `http://localhost:4000/`
 
-NEED TO ADD DATABASE STUFF HERE
-
 ## Overview
 
 At the beginning of this project we spent half a day brain storming ideas and potential concepts for the web application. In the end we unanimously ended up settling on a platform for creatives who are looking for work or to show off their own work. We had a lot of influence from the website The Dots as a reference point along the way as in terms of functionality and design The Dots was a large source of inspiration. The core functionalty of the application is based around Users, Projects and how the two interact with eachother and themselves.
@@ -92,7 +90,7 @@ Beehive's search functionality allows users to easily look up either users or pr
 ![Search Page](src/assets/readme/project_search.png)
 
 ## Extra Functionality
-We packed the Beehive full of functionality in the time we had, aspects such as the carousel makes for a nice interactive user experience whilst the extra step of requests to join a project and having the ability to accept or decline them gives an extra level of depth to the application. Our search functionality is very robust and allows any combination or search criteria. Even small tweeks to the user story make big difference, such as boolean that detects if it is a users first time logging in and redirects them to a unique page that welcomes the new user to the website.
+We packed the Beehive full of functionality in the time we had, aspects such as the carousel makes for a nice interactive user experience whilst the extra step of requests to join a project and having the ability to accept or decline them gives an extra level of depth to the application. Our search functionality is very robust and allows any combination or search criteria. We also have a couple of different methods of communication, with direct chat between users, comments for logged in users on any project and a project message board exclusivly for collaborators. Even small tweeks to the user story make big difference, such as boolean that detects if it is a users first time logging in and redirects them to a unique page that welcomes the new user to the website.
 
 ## Process
 We took the approach of trying to get as much work done off the computer as we possibly could.
@@ -106,10 +104,12 @@ We took the approach of trying to get as much work done off the computer as we p
 7. After the first four days our back end was built out to the extent that we felt comfortable starting on the front end.
 8. At first we simply got the functionality to work on the front end and then once the correct data was being pulled through and most of the functionality was present we moved onto styling and design, attempting to replicate the prototype designs using a combination of Bulma and custom styling.
 
-WIREFRAMING PIC 
-PROTOTYPE PICS
+![Wireframe](src/assets/readme/wireframe.JPG)
+![Designs](src/assets/readme/designs.png)
 
 We used Trello throughout the process as our project management tool. Each morning we would group up and talk one by one about what we'd achieved the day before, what we thought still needed to be done and then we'd add any extra cards to the trello board based on what we thought we needed to do. We would then each claim a couple for the day and try to make sure that we weren't encroaching on any files that eachother were working on to avoid merge conflicts.
+
+![Trello](src/assets/readme/trello.png)
 
 ## Division of work
 
