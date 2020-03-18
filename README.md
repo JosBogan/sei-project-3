@@ -96,13 +96,12 @@ We packed the Beehive full of functionality in the time we had, aspects such as 
 We took the approach of trying to get as much work done off the computer as we possibly could.
 
 1. We spent the first half a day brainstoriming and coming up with project ideas.
-2. After settling on our idea we begin to build up our back end models on a whiteboard.
+2. After settling on our idea we began to build up our back end models on a whiteboard.
 3. We wireframed the user journey and each of the pages that we wanted to include.
-4. One of our group (Abigail Foreman) then mocked up some prototype designs in Indesign/Illustrator
-5. We next started on the back end. With our focus on building out the models, views and controllers.
-6. At the same time one of us worked on Testing.
-7. After the first four days our back end was built out to the extent that we felt comfortable starting on the front end.
-8. At first we simply got the functionality to work on the front end and then once the correct data was being pulled through and most of the functionality was present we moved onto styling and design, attempting to replicate the prototype designs using a combination of Bulma and custom styling.
+4. One of our group (Abigail Foreman) then mocked up some prototype designs in Indesign/Illustrator.
+5. We next started on the back end. With our focus on building out the models, views, controllers and testing.
+6. After the first four days our back end was built out to the extent that we felt comfortable starting on the front end.
+7. At first we simply got the functionality to work on the front end and then once the correct data was being pulled through and most of the functionality was present we moved onto styling and design, attempting to replicate the prototype designs using a combination of Bulma and custom styling.
 
 ![Wireframe](src/assets/readme/wireframe.JPG)
 ![Designs](src/assets/readme/designs.png)
@@ -125,6 +124,7 @@ Whilst on the front end I worked on:
 * Navbar
 * Welcome page
 * User/Project carousel
+* Project card layout
 
 # Reflections
 
@@ -188,5 +188,14 @@ One issue that we were having trouble with that I managed to find a solution to 
 One of the trickiest parts of the project for me was the pending project requests. Although there are many different ways off approaching the task, due to time constraints I didn't didnt have much time to evaluate the options fully and so I went with the method that made the most immediate sense. This method was adding a pending requests field to each user model which was an array of projects. When coding the front end functionality I ran into a couple of issues with this methodology as I endevored to allow the requester and recipient to both accept and decline the request. Whilst the current functionality does work well, in hindsight I would probably look to create another independant request model to specifically handle this functionality.
 
 ## What Next
+Whilst there are many ways that I think our application could be improved, some of the main things that I would addess first of all would be:
+
+* Front end direct message slight redesign
+* We approached the project as with desktop first in mind so I would try to add more responsivity.
+* Change the messaging and potentially collaboration requests to rely on WebSockets rather than our REST API.
+* Look at different collaboration request methodological options.
+* Allow for a project to have multiple owners.
 
 ## Key Learnings
+
+Similarly to my second project, many of my takeaways from this project were about coding as a team. This was my first time using Github with multiple people editing one repository. Learning to avoid merge conflicts, trying to make sure that we were aware of what eachother were working on and who was using which files. This project was also an exercise in project planning and expectation management. We planned very well but even then only just managed to pull off the scope that we wanted as we were very ambitious with the project. We went in with lots of great ideas but ended up having to shelf many of them due to time and resource constraints.
