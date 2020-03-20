@@ -197,5 +197,4 @@ Whilst there are many ways that I think our application could be improved, some 
 * Allow for a project to have multiple owners.
 
 ## Key Learnings
-
 Similarly to my second project, many of my takeaways from this project were about coding as a team. This was my first time using Github with multiple people editing one repository. Learning to avoid merge conflicts, trying to make sure that we were aware of what eachother were working on and who was using which files. This project was also an exercise in project planning and expectation management. We planned very well but even then only just managed to pull off the scope that we wanted as we were very ambitious with the project. We went in with lots of great ideas but ended up having to shelf many of them due to time and resource constraints.
