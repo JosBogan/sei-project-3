@@ -8,10 +8,6 @@ const SearchCardUser = ({ userForm, handleChange, handleMultiChange, professionO
   return (
   
     <section>
-      {/* <div className="title-underLine"> */}
-      {/* <h2 className="subtitle is-4">user search</h2> */}
-      {/* </div> */}
-
       <div className="field">
         <div className="label">name</div>
         <div className="control">        

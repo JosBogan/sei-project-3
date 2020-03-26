@@ -120,18 +120,7 @@ function userPendingProject(req, res) {
           return user.save()
         })
         .then(user => res.status(202).json(user))
-      // const projects = user.pendingProjects.map(project => project.project)
-      // if (projects.includes(req.body.project.project)) return user.save()
-      // if (req.body.user.toString() === req.currentUser._id.toString()) {
-      //   req.body.project.user = true
-      //   user.pendingProjects.push(req.body.project)
-      // } else if (req.body.owner.toString() === req.currentUser._id.toString()) {
-      //   req.body.project.owner = true
-      //   user.pendingProjects.push(req.body.project)
-      // }
-      // return user.save()
     })
-    // .then(user => res.status(202).json(user))
     .catch(err => res.status(400).json(err))
 }
 
@@ -143,10 +132,6 @@ function deletePendingProject(req, res) {
       if (!user) return res.status(404).json({ message: 'Not Found ' })
       const proj = user.pendingProjects.find(project => project.project.toString() === req.params.projectId.toString())
       const userPending = proj.userId.pendingProjects.filter(project => project.project.toString() !== req.params.projectId.toString())
-      console.log(user)
-      // const userPending = user.pendingProjects.filter(project => project.project.toString() !== req.params.projectId.toString())
-      console.log(userPending)
-      // user.pendingProjects = userPending
       proj.userId.pendingProjects = userPending
       proj.userId.save()
       Project.findById(req.params.projectId)
@@ -177,14 +162,10 @@ function acceptPendingProject(req, res) {
       if (!user) return res.status(404).json({ message: 'Not Found ' })
       const pendingProject = user.pendingProjects.find(pendingProject => pendingProject.project._id.toString() === req.params.projectId.toString())
       if (req.currentUser._id.toString() === pendingProject.userId._id.toString()) {
-        // console.log(req.currentUser._id.toString(), pendingProject.ownerId.toString(), pendingProject.userId.toString())
         pendingProject.user = true
       } else if (req.currentUser._id.toString() === pendingProject.ownerId._id.toString()) {
         pendingProject.owner = true
-        // console.log(req.currentUser._id.toString(), pendingProject.ownerId.toString(), pendingProject.userId.toString())
       } else {
-        // console.log('getting here for some reason')
-        // console.log(req.currentUser._id.toString(), pendingProject.ownerId.toString(), pendingProject.userId.toString())
         return res.status(401).json({ message: 'Unauthorized' })
       }
       console.log(pendingProject)

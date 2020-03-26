@@ -30,11 +30,7 @@ class ChatBoxIndex extends React.Component {
   render() {
     const { you } = this.state
     if (!you._id) return null
-    console.log('you =', you)
     const { chats } = this.state.you
-    console.log('chats =', chats)
-    console.log('chats.length =', chats.length)
-    // if (chats.length) return null
     return (
       <section className="is-fullheight-with-navbar section_padding">
         <h1 className="subtitle-hero">Your Messages</h1>

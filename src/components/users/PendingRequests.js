@@ -10,47 +10,11 @@ class PendingRequests extends React.Component {
     // user: null
   }
 
-  // getUser = async () => {
-  //   try {
-  //     const res = await axios.get('/api/myportfolio', {
-  //       headers: { Authorization: `Bearer ${Auth.getToken()}` }
-  //     })
-  //     this.setState({ user: res.data })
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
 
   async componentDidMount() {
     this.props.getUser()
   }
 
-  // handleOpen = () => {
-  //   this.setState({ open: !this.state.open })
-  // }
-
-  // acceptCollabRequest = async (e) => {
-  //   try {
-  //     await axios.get(`/api/users/${this.state.user._id}/collaborate/${e.target.name}`, {
-  //       headers: { Authorization: `Bearer ${Auth.getToken()}` }
-  //     })
-  //     this.getUser()
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
-
-  // rejectCollabRequest = async (e) => {
-  //   console.log(this.state.user._id, e.target.name)
-  //   try {
-  //     await axios.delete(`/api/users/${this.state.user._id}/collaborate/${e.target.name}`, {
-  //       headers: { Authorization: `Bearer ${Auth.getToken()}` }
-  //     })
-  //     this.getUser()
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
 
   render() {
     return (

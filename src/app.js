@@ -48,11 +48,7 @@ class App extends React.Component{
       }
     }
   }
-  // componentDidUpdate() {
-  //   if (Auth.isAuthenticated()) {
-  //     this.getUser()
-  //   }
-  // }
+
   handleOpen = () => {
     this.setState({ open: !this.state.open })
   }
@@ -86,7 +82,7 @@ class App extends React.Component{
   render() {
     return (
       <BrowserRouter>
-        {/* <main style={{ height: '100vh', overflow: 'hidden' }}> */}
+        
         <main>
           <Notifications />
           <Navbar 
@@ -102,16 +98,16 @@ class App extends React.Component{
             <Route path="/discovery" component={Discovery} />
             <SecureRoute path="/myportfolio/edit" component={UserEdit} />
             <Route path="/search" component={Search} />
-            {/* <SecureRoute path="/myportfolio" component={MyPortfolio} /> */}
+            
             <SecureRoute path="/projects/:id/edit" component={ProjectEdit} />
             <SecureRoute path="/projects/new" component={ProjectNew} />
-            {/* <Route path="/projects/:id" component={ProjectShow} getUser={this.getUser}/> */}
+            
             <Route path="/projects/:id" render={(props) => <ProjectShow {...props} getUser={this.getUser}/>}/>
-            {/* <SecureRoute path="/users/:username/edit" component={UserEdit} /> */}
+            
             <Route path="/users/:userid/chatboxes/:id" component={ChatBoxShow} />
             <SecureRoute path="/mail" component={ChatBoxIndex} />
             <Route path="/users/:username" component={UserShow} />
-            {/* <Route path="/users/:username/messages" component={UserMessages} /> */}
+            
             <UnSecureRoute path="/register" component={Register} />
             <UnSecureRoute path="/login" component={Login} />
             <SecureRoute path="/getstarted" component={FirstLogin} />

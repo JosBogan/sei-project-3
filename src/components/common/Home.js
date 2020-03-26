@@ -48,25 +48,7 @@ class Home extends React.Component {
         <section id="discover" className="discover_counter_container">
           <Discovery />
         </section>
-        {/* <section>
-          <h1 id="discover">Discovery</h1>
-          <div>
-            <h2>Users</h2>
-            <div>
-              {this.state.users.map(user => (
-                <UserCard key={user._id} {...user} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2>Projects</h2>
-            <div>
-              {this.state.projects.map(project => (
-                <ProjectCard key={project._id} {...project} />
-              ))}
-            </div>
-          </div>
-        </section> */}
+
       </div>
     )
   }

@@ -35,9 +35,6 @@ class Discovery extends React.Component {
             <div className="gallery_outer_container">
               <div className="gallery_container">
                 <Gallery data={this.state.users} type={'users'}/>
-                {/* {this.state.users.map(user => (
-              <UserCard key={user._id} {...user} />
-            ))} */}
               </div>
             </div>
           </div>
@@ -48,9 +45,6 @@ class Discovery extends React.Component {
             </div>
             <div>
               <Gallery data={this.state.projects} type={'projects'}/>
-              {/* {this.state.projects.map(project => (
-              <ProjectCard key={project._id} {...project} />
-            ))} */}
             </div>
           </div>
         </div>

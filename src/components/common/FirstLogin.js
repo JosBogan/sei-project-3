@@ -16,7 +16,6 @@ class FirstLogin extends React.Component{
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       console.log(res.data.firstLogin)
-      // if (!res.data.firstLogin) this.props.history.push('/discovery')
       this.setState({ name: res.data.name, username: res.data.username })
     } catch (err) {
       console.log(err)

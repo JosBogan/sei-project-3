@@ -5,9 +5,6 @@ const SearchCardUser = ({ formData, handleChange }) => {
   
     <section>
       <form>
-        {/* <div className="title-underLine">
-          <div className="title is-4 padding-v-10">What are you searching for?</div>
-        </div> */}
         <h1 className="has-text-centered">looking for...</h1>
         <br />
         <div className="radio_container">

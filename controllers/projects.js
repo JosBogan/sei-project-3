@@ -162,8 +162,6 @@ function like(req, res) {
         const newLikes = project.likes.filter(like => like.user.toString() !== req.currentUser._id.toString())
         project.likes = newLikes
       }
-      // if (project.likes.some(like => like.user.equals(req.currentUser._id))) return project
-      // project.likes.push({ user: req.currentUser })
       return project.save()
     })
     .then(project => res.status(202).json(project))

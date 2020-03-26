@@ -157,16 +157,6 @@ class UserShow extends React.Component {
         </section>
 
         <section>
-          {/* <h4>Owned Projects</h4>
-          {user.createdProjects.map(project => (
-            <ProjectCard key={project._id} {...project} />
-          ))} */}
-          {/* <ul>{collaboratedProjects.map(project => <li key={project}>{project}</li>)}</ul> */}
-          {/* <div className="columns is-mobile is-multiline">
-            {user.collaboratedProjects.map(project => (
-              <ProjectCard className="" key={project._id} {...project} />
-            ))}
-          </div> */}
           { user.collaboratedProjects.length !== 0 &&
           <Gallery data={user.collaboratedProjects} type={'projects'}/>
           }
