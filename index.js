@@ -2,7 +2,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const { port, dbURI } = require('./config/environment')
-
 const router = require('./config/router')
 const logger = require('./lib/logger')
 const errorHandler = require('./lib/errorHandler')
